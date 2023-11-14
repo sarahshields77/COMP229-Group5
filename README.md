@@ -7,7 +7,8 @@ Riches, Lyndsay
 Shields, Sarah
 Shirley, Samantha
 
-This is a test for Git - Marcus
+Status Update - Vincent
 
-Our group project is a web application is an online marketplace 
-called 8-Bit Bazaar, where users can buy and sell video games and consoles. 
+Our group project web application is an online marketplace called 8-Bit Bazaar, 
+where users can buy and sell video games and consoles. 
+
