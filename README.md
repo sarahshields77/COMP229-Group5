@@ -1,11 +1,11 @@
 # COMP229-Group5
 
-Bouchard, Brayden
-Charles, Marcus
-Chen, Vincent
-Riches, Lyndsay
-Shields, Sarah
-Shirley, Samantha
+Brayden Bouchard
+Marcus Charles
+Vincent Chen
+Lyndsay Riches
+Sarah Shields
+Samantha Shirley
 
 
 Our group project web application is an online marketplace called 8-Bit Bazaar, 
