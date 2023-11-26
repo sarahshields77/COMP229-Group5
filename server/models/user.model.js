@@ -4,7 +4,8 @@ import crypto from 'crypto'
 const UserSchema = new mongoose.Schema({
  name: {
  type: String,
- trim: true
+ trim: true,
+ required: 'Name is required'
  },
  email: {
  type: String,
@@ -12,8 +13,16 @@ const UserSchema = new mongoose.Schema({
 unique: 'Email already exists',
 match: [/.+\@.+\..+/, 'Please fill a valid email address'],
 required: 'Email is required'
- },
- created: {
+   },
+ seller: {
+type: Boolean, 
+default: false
+   },
+ photo: {
+data: Buffer, 
+contentType: String
+},
+created: {
 type: Date,
 default: Date.now
    },
