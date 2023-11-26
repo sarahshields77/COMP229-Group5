@@ -59,7 +59,7 @@ export default function Home() {
       />
       <CardContent>
         <Typography variant="body2" component="p">
-          Welcome to the 8-Bit Bazaar Video Game Marketplace
+          Welcome to 8-Bit Bazaar Video Game Marketplace
         </Typography>
       </CardContent>
     </Card>
