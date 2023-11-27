@@ -38,24 +38,24 @@ const Menu = withRouter(({ history }) => (
         </Link>
         <Link to="/cart">
           <Button style={isActive(history, "/cart")}>
-            Cart
+            My Cart
             <Badge
               color="secondary"
               invisible={false}
               badgeContent={cart.itemTotal()}
-              style={{ marginLeft: "7px" }}
+              style={{ marginLeft: "10px" }}
             >
               <CartIcon />
             </Badge>
           </Button>
         </Link>
       </div>
-      <div style={{ position: "absolute", right: "10px" }}>
+      <div style={{ position: "absolute", right: "20px" }}>
         <span style={{ float: "right" }}>
           {!auth.isAuthenticated() && (
             <span>
               <Link to="/signup">
-                <Button style={isActive(history, "/signup")}>Sign up</Button>
+                <Button style={isActive(history, "/signup")}>Register</Button>
               </Link>
               <Link to="/signin">
                 <Button style={isActive(history, "/signin")}>Sign In</Button>

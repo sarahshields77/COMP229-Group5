@@ -22,4 +22,5 @@ const theme = createTheme({
     type: "light",
   },
 });
+// #3f4771 => 200045
 export default theme;
