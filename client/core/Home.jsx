@@ -4,7 +4,7 @@ import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Typography from "@material-ui/core/Typography";
-import homesplashImg from "./../assets/images/home_splash.png";
+import homesplashImg from "./../assets/images/8BitBazaar-Splash.jpg";
 import { listLatest } from "./../product/api-product.js";
 import LatestProducts from "./../core/LatestProducts";
 import { list } from "./../shop/api-shop.js";
