@@ -77,7 +77,7 @@ export default function Shops(props) {
     <div>
       <Paper className={classes.root} elevation={4}>
         <Typography variant="h6" className={classes.title}>
-          Check Out the Newest Shops
+          See more sellers!
         </Typography>
         <Grid container spacing={3}>
           {limitedShops.map((shop, i) => (
