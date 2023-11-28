@@ -84,30 +84,6 @@ export default function Home() {
       </Card>
       <LatestProducts products={data.products} />
       <FeaturedShops shops={data.shops} />
-<<<<<<< HEAD
-      <Card className={classes.card} style={{ textAlign: "center" }}>
-        <div style={{ display: "inline-block", textAlign: "left" }}>
-          <img
-            src={FusionFactoryLogo}
-            alt="Fusion Factory Logo"
-            style={{
-              verticalAlign: "middle",
-              marginRight: "10px",
-              width: "200px",
-              height: "auto",
-            }}
-          />
-          <Typography
-            variant="body2"
-            component="p"
-            style={{ display: "inline-block", textAlign: "center" }}
-          >
-            Copyright 2023 - 8-Bit Bazaar by Fusion Factory - Brayden Bouchard,
-            Marcus Charles, Vincent Chen, Lyndsay Riches, Sarah Shields and
-            Samantha Shirley
-          </Typography>
-        </div>
-=======
       <Card className={classes.card}>
         <Typography variant="body2" component="p">
           <center>
@@ -116,7 +92,6 @@ export default function Home() {
             Samantha Shirley
           </center>
         </Typography>
->>>>>>> parent of f06d04ad (Limit Latest Products on Home to 8 items)
       </Card>
     </div>
   );
