@@ -4,7 +4,7 @@ import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Typography from "@material-ui/core/Typography";
-import homesplashImg from "./../assets/images/8BitBazaar-Splash.jpg";
+import homesplashImg from "./../assets/images/8BitBazaar-Splash_400px.png";
 import { listLatest } from "./../product/api-product.js";
 import LatestProducts from "./../core/LatestProducts";
 import { list } from "./../shop/api-shop.js";
@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.openTitle,
   },
   media: {
-    minHeight: 600,
+    minHeight: 400,
   },
   body2: {
     textAlign: "center",
@@ -76,12 +76,8 @@ export default function Home() {
           className={classes.media}
           image={homesplashImg}
           title="8-Bit Bazaar "
+          alt="Welcome to 8-Bit Bazaar - Your Retro Game Source!"
         />
-        <CardContent>
-          <Typography variant="body2" component="p">
-            Welcome to the 8-Bit Bazaar home page.
-          </Typography>
-        </CardContent>
       </Card>
       <LatestProducts products={data.products} />
       <FeaturedShops shops={data.shops} />
