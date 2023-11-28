@@ -89,16 +89,6 @@ export default function Home() {
       </Card>
       <LatestProducts products={data.products} />
       <FeaturedShops shops={data.shops} />
-<<<<<<< Updated upstream
-      <Card className={classes.card}>
-        <Typography variant="body2" component="p">
-          <center>
-            Copyright 2023 - 8-Bit Bazaar by Fusion Factory - Brayden Bouchard,
-            Marcus Charles, Vincent Chen, Lyndsay Riches, Sarah Shields and
-            Samantha Shirley
-          </center>
-        </Typography>
-=======
       <Card className={classes.card} style={{ textAlign: "center" }}>
         <div style={{ display: "inline-block", textAlign: "left" }}>
           <img
@@ -121,7 +111,6 @@ export default function Home() {
             Samantha Shirley
           </Typography>
         </div>
->>>>>>> Stashed changes
       </Card>
     </div>
   );
