@@ -10,6 +10,7 @@ import { Link, withRouter } from "react-router-dom";
 import CartIcon from "@material-ui/icons/ShoppingCart";
 import Badge from "@material-ui/core/Badge";
 import cart from "./../cart/cart-helper";
+import AppLogoSm from "../assets/images/8BitBazaar-horizontal_logo.png";
 
 const isActive = (history, path) => {
   if (history.location.pathname == path) return { color: "#bef67a" };
@@ -22,9 +23,9 @@ const isPartActive = (history, path) => {
 const Menu = withRouter(({ history }) => (
   <AppBar position="static">
     <Toolbar>
-      <Typography variant="h6" color="inherit">
-        8-BIT BAZAAR
-      </Typography>
+      <Link to="/">
+      <img src={AppLogoSm} alt="8BitBazaar Logo" style={{ height: "25px", marginRight: "25px"}} />
+      </Link>
       <div>
         <Link to="/">
           <IconButton aria-label="Home" style={isActive(history, "/")}>
