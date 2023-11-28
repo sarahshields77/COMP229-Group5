@@ -44,7 +44,7 @@ export default function Products(props) {
   const classes = useStyles();
 
   // Limit the number of products based on the 'limit' prop
-  const limit = 8;
+  const limit = 12;
   const limitedProducts = props.products.slice(0, limit);
 
   return (

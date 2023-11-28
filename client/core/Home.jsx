@@ -4,13 +4,8 @@ import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Typography from "@material-ui/core/Typography";
-<<<<<<< Updated upstream
 import homesplashImg from "./../assets/images/home_splash.png";
 import { listLatest } from "./../product/api-product.js";
-=======
-import homesplashImg from "./../assets/images/8BitBazaar-Splash_400px.png";
-import { listLatestHome } from "./../product/api-product.js";
->>>>>>> Stashed changes
 import LatestProducts from "./../core/LatestProducts";
 import { list } from "./../shop/api-shop.js";
 import FeaturedShops from "./../core/FeaturedShops";
@@ -46,7 +41,7 @@ export default function Home() {
     const signal = abortController.signal;
 
     // Fetch latest products
-    listLatestHome(signal)
+    listLatest(signal)
       .then((productData) => {
         if (productData.error) {
           setError(productData.error);
@@ -89,16 +84,7 @@ export default function Home() {
       </Card>
       <LatestProducts products={data.products} />
       <FeaturedShops shops={data.shops} />
-<<<<<<< Updated upstream
-      <Card className={classes.card}>
-        <Typography variant="body2" component="p">
-          <center>
-            Copyright 2023 - 8-Bit Bazaar by Fusion Factory - Brayden Bouchard,
-            Marcus Charles, Vincent Chen, Lyndsay Riches, Sarah Shields and
-            Samantha Shirley
-          </center>
-        </Typography>
-=======
+<<<<<<< HEAD
       <Card className={classes.card} style={{ textAlign: "center" }}>
         <div style={{ display: "inline-block", textAlign: "left" }}>
           <img
@@ -121,7 +107,16 @@ export default function Home() {
             Samantha Shirley
           </Typography>
         </div>
->>>>>>> Stashed changes
+=======
+      <Card className={classes.card}>
+        <Typography variant="body2" component="p">
+          <center>
+            Copyright 2023 - 8-Bit Bazaar by Fusion Factory - Brayden Bouchard,
+            Marcus Charles, Vincent Chen, Lyndsay Riches, Sarah Shields and
+            Samantha Shirley
+          </center>
+        </Typography>
+>>>>>>> parent of f06d04ad (Limit Latest Products on Home to 8 items)
       </Card>
     </div>
   );
