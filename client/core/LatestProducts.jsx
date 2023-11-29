@@ -44,12 +44,12 @@ export default function Products(props) {
   const classes = useStyles();
 
   // Limit the number of products based on the 'limit' prop
-  const limit = 12;
+  const limit = 8;
   const limitedProducts = props.products.slice(0, limit);
 
   return (
     <div className={classes.root}>
-      <Typography variant="h2" className="subtitle">
+      <Typography variant="h6" className={classes.title}>
         Latest Products
       </Typography>
       <Grid container spacing={3}>
