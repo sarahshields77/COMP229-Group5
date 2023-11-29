@@ -49,7 +49,7 @@ export default function Products(props) {
 
   return (
     <div className={classes.root}>
-      <Typography variant="h6" className={classes.title}>
+      <Typography variant="h2" className="subtitle">
         Latest Products
       </Typography>
       <Grid container spacing={3}>

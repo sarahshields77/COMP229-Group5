@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: theme.spacing(2),
     display: "flex",
     flexDirection: "column",
-    height: "100%",
+    height: "80%",
   },
   link: {
     textDecoration: "none",
@@ -76,7 +76,7 @@ export default function Shops(props) {
   return (
     <div>
       <Paper className={classes.root} elevation={4}>
-        <Typography variant="h6" className={classes.title}>
+        <Typography variant="h3" className="shopTitle">
           See more sellers!
         </Typography>
         <Grid container spacing={3}>
