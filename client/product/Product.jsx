@@ -126,7 +126,7 @@ export default function Product ({match}) {
                     <span className={classes.price}>$ {product.price}</span>
                     <Link to={'/shops/'+product.shop._id} className={classes.link}>
                       <span>
-                        <Icon className={classes.icon}>shopping_basket</Icon> {product.shop.name}
+                        <Icon className={classes.icon}></Icon> {product.shop.name}
                       </span>
                     </Link>
                   </Typography>
@@ -136,7 +136,7 @@ export default function Product ({match}) {
             </Grid>
             {suggestions.length > 0 &&
               (<Grid item xs={5} sm={5}>
-                <Suggestions  products={suggestions} title='Related Products'/>
+                <Suggestions  products={suggestions}/>
               </Grid>)}
           </Grid>
         </div>)
