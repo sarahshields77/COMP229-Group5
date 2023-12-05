@@ -9,7 +9,7 @@ lerna-debug.log*
 
 # Dependency directories
 # Comment out node_modules for deployment
-# node_modules/
+node_modules/
 dist
 dist-ssr
 *.local
