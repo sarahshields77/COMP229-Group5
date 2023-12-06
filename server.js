@@ -1,6 +1,7 @@
 import config from './config/config.js' 
 import app from './server/express.js'
 import mongoose from 'mongoose' 
+import path from 'path';
 mongoose.Promise = global.Promise
 mongoose.connect(config.mongoUri, { useNewUrlParser: true,
 
@@ -15,6 +16,9 @@ throw new Error(`unable to connect to database: ${config.mongoUri}`)
 })
 
 app.use(express.static(path.join(CURRENT_WORKING_DIR, "dist/app")));
+app.get("*", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "client", "index.html"))
+})
 
 app.listen(config.port, (err) => { 
 if (err) {
